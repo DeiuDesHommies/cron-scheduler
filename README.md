@@ -5,8 +5,7 @@
 ```
 create table backup_schedule
 (
-	id                      bigint auto_increment comment '''主键'''
-	primary key,
+	id                      bigint auto_increment comment '''主键''' primary key,
 	task_id                 bigint      default 0  not null comment '''计划id''',
 	cron                    varchar(32) default '' not null comment '''cron表达式''',
 	type                    varchar(32) default '' not null comment '''任务类型''',
