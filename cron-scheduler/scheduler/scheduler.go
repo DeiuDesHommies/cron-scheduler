@@ -12,7 +12,7 @@ type TaskManager struct {
 
 var GlobalTaskManager *TaskManager
 
-// 新建调度器
+// NewTaskManager 新建调度器
 func NewTaskManager() *TaskManager {
 	timeZone, _ := time.LoadLocation("Asia/Shanghai")
 	return &TaskManager{

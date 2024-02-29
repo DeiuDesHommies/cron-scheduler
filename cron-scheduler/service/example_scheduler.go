@@ -39,6 +39,6 @@ func GetExecutor(schedule *model.Schedule) (scheduler.Executor, error) {
 		}, nil
 	}
 	var err error
-	err = fmt.Errorf("Task type error")
+	err = fmt.Errorf("task type error")
 	return nil, err
 }
