@@ -35,7 +35,7 @@ var (
 	dbOnce sync.Once
 )
 
-// 初始化数据库连接
+// Initdb 初始化数据库连接
 func Initdb() error {
 	dsn := "root:liuxiao123@tcp(127.0.0.1:3306)/schedule_task?charset=utf8mb4&parseTime=True&loc=Local"
 	db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{
